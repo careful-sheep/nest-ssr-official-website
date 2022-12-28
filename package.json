@@ -7,7 +7,8 @@
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
-        "commitlint": "commitlint --config commitlint.config.js -e -V"
+        "commitlint": "commitlint --config commitlint.config.js -e -V",
+        "debugger": "cross-env NODE_OPTIONS='--inspect' next dev"
     },
     "dependencies": {
         "@next/font": "13.1.1",
@@ -24,6 +25,7 @@
     "devDependencies": {
         "@commitlint/cli": "^17.3.0",
         "@commitlint/config-conventional": "^17.3.0",
+        "cross-env": "^7.0.3",
         "husky": "^8.0.2",
         "sass": "^1.57.1",
         "typescript-plugin-css-modules": "^4.1.1"
